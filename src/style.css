@@ -1,0 +1,56 @@
+:root {
+  --color-primary: #0A84FF;
+  --color-primary-light: #5AC8FA;
+  --color-secondary: #30D158;
+  --color-accent: #FF9F0A;
+  --color-error: #FF453A;
+  --color-text: #1c1c1e;
+  --color-text-secondary: #6c6c70;
+  --color-background: #f2f2f7;
+  --color-card-background: #ffffff;
+  --color-border: #e5e5ea;
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f2f2f7;
+    --color-text-secondary: #aeaeb2;
+    --color-background: #1c1c1e;
+    --color-card-background: #2c2c2e;
+    --color-border: #38383a;
+  }
+}
+
+@media (max-width: 768px) {
+  #app {
+    padding: 1rem;
+  }
+}
